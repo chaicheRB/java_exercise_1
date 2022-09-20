@@ -8,8 +8,9 @@ public class Launcher {
 
         String input = scanner.nextLine();
 
-        if (!"quit".equals(input)) {
+        while (!"quit".equals(input)) {
             System.out.println("Unknown command");
+            input = scanner.nextLine();
         }
     }
 }
