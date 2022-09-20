@@ -13,19 +13,18 @@ public class Launcher {
 
     public static void main(String[] args) {
         System.out.println("Bienvenue");
-
         var scanner = new Scanner(System.in);
-
         String input = scanner.nextLine();
 
         while (!"quit".equals(input)) {
             if ("fibo".equals(input)) {
                 System.out.println("Choisir n, qui sera l'argument de la suite de Fibonacci");
                 System.out.println(fibo((scanner.nextInt())));
-                break;
+                scanner.nextLine();
+            } else {
+                System.out.println("Unknown command");
             }
 
-            System.out.println("Unknown command");
             input = scanner.nextLine();
         }
     }
