@@ -1,0 +1,6 @@
+bin/
+out/
+
+# for IntelliJ
+.idea/
+java_exercice_1.iml
